@@ -77,7 +77,7 @@ $sql = "UPDATE datasekolah SET nama='$nama', alamat='$alamat', jk='$jk', ttl='$d
 $update = mysqli_query($conn, $sql);
 
  if($update) {
-    header("Location: simpan.php?success=Berhasil Mengupdate Data");
+    header("Location: simpan?success=Berhasil Mengupdate Data");
     exit();
 } else {
     header("Location: simpan.php?error=Data Yang Anda Masukan Error!");

@@ -6,7 +6,7 @@
 	<title>data</title>
 </head>
 <body>
-	<h1>DATA YANG ANDA MASUKAN TADI...</h1>
+	<h1 style="">DATA YANG ANDA MASUKAN TADI...</h1>
 	<?php
 
 	$nama = $_GET['nama'];

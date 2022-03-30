@@ -1,0 +1,231 @@
+<!-- ============================ -->
+<!-- Author : Abdul Malik Muzakir -->
+<!-- Kelas/Jurusan : XI RPL 1 -->
+<!-- ============================ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TUGAS PTS PWPB</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<style type="text/css">
+*{
+	font-family: sans-serif;
+}
+	.hero{
+		height: 100%;
+		width: 100%;
+		background-color: #FFF0F5;
+		background-position: center;
+		background-size: cover;
+		position: absolute;
+	}
+	.clr{
+		color: #ff105f;
+	}
+	
+	.vilain{
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+		border-radius: 30px;
+		width: 400px;
+		height: 580px;
+		position: relative;
+		margin: 6% auto;
+		background: linear-gradient(to right, #EE82EE,#FFE4E1);
+		padding: 5px;
+		overflow: hidden;
+		}
+		.saya{
+			width: 210px;
+			margin: 35px auto;
+			position: relative;
+			background-color: #A9A9A9;
+			box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+			border-radius: 30px;
+		}
+		.tmbl1{
+			padding: 10px 30px;
+			cursor: pointer;
+			background: transparent;
+			border: 0;
+			outline: none;
+			position: relative;
+		}
+		#btn{
+			top: 0;
+			left: 0;
+			position: absolute;
+			width: 100px;
+			height: 100%;
+			background: linear-gradient(to right, #1E90FF,#ffad06);
+			border-radius: 30px;
+			transition: .5s;
+		}
+		.inputan{
+			top: 100px;
+			position: absolute;
+			width: 300px;
+			transition: .5s;
+		}
+		.inputan textarea{
+			color: #ff105f;
+		}
+		.usr{
+			width: 100%;
+			padding:10px 0;
+			margin: 5px 0;
+			border-left: 0;
+			border-top: 0;
+			border-right: 0;
+			border-bottom: 1px solid #999;
+			outline: none;
+			background: transparent;
+		}
+		.sbmt1{
+			width: 85%;
+			padding: 10px 30px;
+			cursor: pointer;
+			display: block;
+			margin-top: 30px;
+			background: linear-gradient(to right, #ff105f,#ffad06);
+			border: 0;
+			outline: none;
+			border-radius: 30px;
+		}
+		#lgn{
+			left: 50px;
+
+		}
+		#rgsr{
+			left: 450px;
+
+		}
+		i{
+			position: absolute;
+			right: 40px;
+			top: 45%;
+			color: #00FF7F;
+			cursor: pointer;
+			transform: translateY(-50%);
+		}
+		i.active::before{
+			color: #333;
+			content: "\f070";
+		}
+
+</style>
+</head>
+<body class="hero">
+		<div class="vilain">
+			<div class="saya">
+				<div id="btn"></div>
+				<button type="button" class="tmbl1" onclick="lgn()">Login</button>
+				<button type="button" class="tmbl1" onclick="rgsr()">Register</button>
+
+			</div>
+			<!--ini login-->
+			<form id="lgn" class="inputan">
+			<table>
+				<tr >
+					<td><label for="x" class="clr">Username</label></td>
+					<td align="center">:
+					</td>
+					<td><input type="form" id="x" class="usr"></td>
+				</tr>
+				<tr>
+					<td><label for="z" class="clr">Password</label></td>
+					<i class="fas fa-eye"></i>
+					<td align="center">:
+					</td>
+					<td><input type="password" id="z" class="usr"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button type="submit" class="sbmt1" >Login</button></td>
+				</tr>
+			</table>
+			</form>
+			<!--ini register-->
+			<form id="rgsr" class="inputan">
+			<table class="clr">
+		<tr>
+			<td><label for="p">Nama</label></td>
+			<td align="center">:</td>
+			<td><input type="form" id="p" class="usr" ></td>
+		</tr>
+		<tr>	
+			<td><label for="a">TTL</label></td>
+			<td align="center">:</td>
+			<td><input type="form" id="a" class="usr"></td>
+		</tr>
+		<tr>
+			<td><label for="b">Alamat</label></td>
+			<td align="center">:</td>
+			<td><textarea id="b" class="usr">isi kan alamat</textarea></td>
+		</tr>
+		<tr>
+			<td><label for="c">No telepon</label></td>
+			<td align="center">:</td>
+			<td><input type="form" id="c" class="usr"></td>
+		</tr>
+		<tr>
+			<td><label for="d">Kode pos</label></td>
+			<td align="center">:</td>
+			<td><input type="form" id="d" class="usr"></td>
+		</tr>
+		<tr>
+			<td><label for="e">Nama Ibu</label></td>
+			<td align="center">:</td>
+			<td><input type="form" id="e" class="usr"></td>
+		</tr>
+		<tr>
+			<td><label for="Y">jenis kelamin</label></td>
+			
+			<td align="center">:</td>
+			
+			<td colspan="2"><input type="radio" name="l" id="g"><label for="g">laki-laki</label>
+			<br>
+			<input type="radio" name="l" id="j"><label for="j">perempuan</label></td>
+		</tr>
+			<tr>
+					<td colspan="2"><button type="submit" class="sbmt1" >Register</button></td>
+				</tr>
+			</table>
+			</form>
+		</div>
+	
+
+<script type="text/javascript">
+	const pswrdField = document.querySelector("input[type='password']"),
+	toggleIcon = document.querySelector("i");
+	toggleIcon.onclick = () =>{
+		if(pswrdField.type === "password"){
+			pswrdField.type = "text";
+			toggleIcon.classList.add("active");
+		}else{
+			pswrdField.type = "password";
+			toggleIcon.classList.remove("active");
+		}
+	}
+</script>
+
+<script type="text/javascript">
+	var x = document.getElementById("lgn")
+	var y = document.getElementById("rgsr")
+	var z = document.getElementById("btn")
+
+	function rgsr(){
+		x.style.left = "-400px"
+		y.style.left = "20px"
+		z.style.left ="110px"
+	}
+	function lgn(){
+		x.style.left = "50px"
+		y.style.left = "450px"
+		z.style.left ="0px"
+	}
+	
+	
+</script>
+</body>
+</html>
